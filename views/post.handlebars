@@ -1,0 +1,10 @@
+<section class="container">
+  <h3>MAKE POST NAME{{post.name}}</h3>
+  <h4>USERNAME {{user.name}}</h4>
+  <h4>POST DATE{{post.date}}</h4>
+  <section>
+    {{#each topic.posts as |post|}}
+    {{> post-content}}
+    {{/each}}
+  </section>
+</section>
