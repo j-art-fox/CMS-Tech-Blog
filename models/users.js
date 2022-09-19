@@ -23,6 +23,20 @@ User.init(
         isEmail: true,
       },
     },
+    posts: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id',
+      },
+    },
+    comments: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'category',
+        key: 'id'
+      },
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
