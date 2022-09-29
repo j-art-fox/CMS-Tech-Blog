@@ -1,6 +1,6 @@
 //controllers are just functions that are exported
 //the only thing that goes to controllers are database work. (posts, delete)
-const { ????(post) } = require('../models')
+// const { ????(post) } = require('../models')
 
 module.exports = {
    //Find all posts

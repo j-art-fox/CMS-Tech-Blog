@@ -31,13 +31,6 @@ User.init(
         isEmail: true,
       },
     },
-    posts: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'posts',
-        key: 'id',
-      },
-    },
     comments: {
       type: DataTypes.INTEGER,
       references: {
